@@ -1,0 +1,349 @@
+/* ここから下に記載していく */
+/* サイト全体のフォント指定 */
+body {
+    font-family:"游ゴシック";
+ }
+
+
+.header{
+    /* 横並び */
+    display: flex; 
+    /* コンテンツを上下中央にそろえる */
+    justify-content: space-around; 
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+}
+
+.header__nav li{
+    margin-left: 40px; 
+}
+
+/* ここからメインビジュアル */
+.mainvisual{
+    height: 400px;
+    /* background-color: olive; */
+    background: url(../img/mainbg.png);
+    background-position: center;
+    /* ピッタリカバーする */
+    background-size: cover;
+    /* 余ったらリピートする？ */
+    background-repeat: no-repeat;
+}
+
+.mainvisual__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 180px;
+}
+.mainvisual__subtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ここからABOUT*/
+.about{
+    text-align: center;
+    /* レスポンシブルデザインにしたければパーセンテージ指定が良い */
+    width: 60%;
+    /* autoにすると両方から自動で真ん中にしてくれるのでちょうどいい感じになるのでおすすめ */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.about__title{
+    font-size: 30px;
+    font-family: bold;
+    color: olive;
+    margin-bottom: 20px;
+}
+
+.about__subtitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about__text{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* img */
+.imgBox{
+    display: flex;    
+}
+
+.imgBox p{
+    width: 25%;
+}
+
+.imgBox p img{
+    width: 100%;
+
+}
+
+/* COURSE */
+.course{
+    text-align: center;
+    /* レスポンシブルデザインにしたければパーセンテージ指定が良い */
+    width: 60%;
+    /* autoにすると両方から自動で真ん中にしてくれるのでちょうどいい感じになるのでおすすめ */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+}
+
+.course__title{
+    font-size: 30px;
+    font-family: bold;
+    color: olive;
+    margin-bottom: 20px;  
+}
+
+.about__text{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+/* tokushoku  */
+.Tokushoku{
+    /* 横並び */
+    display: flex; 
+    /* コンテンツを上下中央にそろえる */
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0; /* 要素の外側の余白を0に定義 */
+    padding: 0; /* 要素の内側の余白を0に定義 */
+}
+
+/* イメージのほう */
+.left-column {
+    width: 50%; /* 要素の幅を50%に定義 */
+    }
+
+.left-column p img{
+    width: 100%;
+}
+
+/* テキストの方 */
+.right-column {
+    width: 50%; /* 要素の幅を50%に定義 */
+    background-color: rgb(240, 240, 240);
+    background-position: center;
+    /* ピッタリカバーする */
+    background-size: cover;
+    }    
+
+.right-column_box{
+    width: 480px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 120px;
+    margin-bottom: 120px;  
+}
+
+.right-column_box2{
+    width: 480px;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;  
+}
+
+.right-column h3{
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: bold; 
+    margin-bottom: 40px;
+}
+.right-column p{
+    margin-right: auto;
+    line-height: 1.3;
+}
+
+
+
+/* NEWS card */
+.news{
+    /* 横並び */
+    display: flex; 
+    /* コンテンツを上下中央にそろえる */
+    justify-content: center; 
+    align-items: center;
+}
+
+.news__card{
+    margin-right: 30px;
+}
+    /* hover の設定*/
+.news__card:hover{
+    opacity: 0.5 ;
+}
+
+.news__card h6{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+.news__card p{
+    width: 300px;
+    line-height: 1.3;
+}
+
+
+/* NEWS button */
+.news__button{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* autoにすると両方から自動で真ん中にしてくれるのでちょうどいい感じになるのでおすすめ */
+    margin-left: auto;
+    margin-right: auto;
+    padding:50px 0;
+    display:flex;
+    justify-content:center;
+}
+
+.news__button :hover{
+    opacity: 0.5 ;
+}
+
+  .button{
+    background:gold;
+    color: mintcream;
+    font-weight : bold ;
+    width: 300px;
+    height: 18px;
+    padding:1em 1em;
+    font-size: 18px;
+    text-align:center;
+    text-decoration: none;
+  }
+
+/* ACCSESS*/
+.Access{
+    background-color:whitesmoke;
+    text-align: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+ }
+
+.Access__textbox h3{
+    font-size: 30px;
+    font-family: bold;
+    color: olive;
+    margin-bottom: 30px;
+}
+
+.Access__textbox h4{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.Access__textbox p{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* ACCESS MAP */
+.Access__map {
+    position: relative;
+    overflow: hidden;
+    padding-top: 30%;
+    margin-bottom: 60px;
+    }
+
+.Access__map iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+ }
+
+/* CONTACT */
+.Form{
+    /* 横並び */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Form table{
+    width: 500px;
+    border: 3px solid #bfbfbf;
+    border-left: none;
+    border-right: none;
+}
+
+.Form tr{
+    width: 328px;
+    height:  36px;
+    border: 1px solid #bfbfbf;
+    border-left: none;
+    border-right: none;
+}
+
+.Form th{
+    padding-left: 16px;
+    padding-right: 64px;
+    text-align: left;
+    border: 1px solid #bfbfbf;
+    border-left: none;
+    border-right: none;
+}
+
+.Form td{
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    border-left: 1px solid #bfbfbf;
+}
+
+.Form td label{
+    padding-bottom: 24px;
+}
+
+/* CONTACT button */
+  .contact__button{
+    margin-top: 30px;
+    margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:50px 0;
+    display:flex;
+    justify-content:center;
+}
+
+.contact__button :hover{
+    opacity: 0.5 ;
+}
+
+
+/* copyrights */
+.copyrights {
+    background-color: #707070;
+    color: mintcream;
+}
+
+.copyrights p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
